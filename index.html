@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <button type="submit" id="again-btn" onclick="againBtn()">Again!</button>
+      <p>(Between 1 and 20)</p>
+    </header>
+    <div class="isguess">
+      <h1>Guess My Number!</h1>
+      <!-- <div class="line"></div> -->
+      <div class="correct-number-box">
+        <div class="correct-number">?</div>
+      </div>
+    </div>
+    <div class="input-box-details">
+      <label for="guess-number" class="guess-number-box">
+        <input
+          type="number"
+          name="guess-number"
+          id="guess-number"
+          min="1"
+          max="20"
+        />
+        <button type="submit" id="check-btn" onclick="getNumber()">
+          Check!
+        </button>
+      </label>
+      <section>
+        <p class="guessing-text">Start guessing..</p>
+        <p>💯 Score: <span class="score">20</span></p>
+        <p>🏆 Highscore: <span class="highscore">0</span></p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
